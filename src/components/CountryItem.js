@@ -7,9 +7,7 @@ const CountryItem = ({country, onCountryClick}) => {
         onCountryClick(country)
     }
 
-    const setSelectedCountry = function() {
-
-    }
+  
 
     return (
         <li onClick={handleClick}>

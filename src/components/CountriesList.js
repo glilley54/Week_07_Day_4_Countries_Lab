@@ -1,13 +1,16 @@
 import React from 'react';
 import CountryItem from './CountryItem';
 
-const CountriesList = ({countries, onCountryClick}) => {
+const CountriesList = ({countries, onCountryClick, selectedCountry}) => {
 
     const countryNodes = countries.map((country, index) => {
-        console.log(country)
-        return<CountryItem country = {country} key = {index} onCountryClick = {onCountryClick}/>
+        return<CountryItem 
+        country = {country} 
+        key = {index} 
+        onCountryClick = {onCountryClick} 
+        selectedCountry = {selectedCountry}/>
        
-    })
+    });
 
     return (
      <ul>
