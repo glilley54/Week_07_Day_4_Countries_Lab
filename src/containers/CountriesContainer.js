@@ -32,7 +32,7 @@ const CountriesContainer = function () {
 
     return (
         <div className="main-container">
-            <CountriesList countries = {countries} onCountryClick = {onCountryClick} selectedCountry = {selectedCountry}/>
+            <CountriesList id = " countries" countries = {countries} onCountryClick = {onCountryClick} selectedCountry = {selectedCountry}/>
             <CountryInfo selectedCountry = {selectedCountry} onButtonClick = {onButtonClick}/>
             <FavouriteCountries favourites = {favourites} onButtonClick = {onButtonClick}/>
         </div>
