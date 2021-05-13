@@ -26,9 +26,9 @@ const CountriesContainer = function () {
     }
 
     return (
-        <div>
-            <CountryInfo selectedCountry = {selectedCountry}/>
+        <div className="main-container">
             <CountriesList countries = {countries} onCountryClick = {onCountryClick} selectedCountry = {selectedCountry}/>
+            <CountryInfo selectedCountry = {selectedCountry}/>
         </div>
     )
 }

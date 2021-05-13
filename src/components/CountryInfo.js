@@ -4,8 +4,8 @@ const CountryInfo = ({country, selectedCountry}) => {
 
     return (
         <div>
-            <h1> name: {selectedCountry.name} </h1> 
-            {/* <img> src= {selectedCountry.flag} </img> */}
+            <h1> name: {selectedCountry.name}</h1> 
+            <img src={selectedCountry.flag}></img>
         </div>
     );
 
