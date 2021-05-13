@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import CountriesList from "../components/CountriesList";
+import CountrySelector from "../components/CountrySelector";
 import CountryInfo from "../components/CountryInfo";
 import FavouriteCountries from "../components/FavouriteCountries";
 import './container.css';
@@ -30,9 +31,19 @@ const CountriesContainer = function () {
         setFavourites(updatedFaves)
     }
 
+    const onCountrySelected = (country) => {
+        setSelectedCountry(country)
+    }
+    
+
     return (
         <div className="main-container">
-            <CountriesList id = " countries" countries = {countries} onCountryClick = {onCountryClick} selectedCountry = {selectedCountry}/>
+            <CountrySelector id = "countries" 
+            countries = {countries} 
+            onCountryClick = {onCountryClick} 
+            selectedCountry = {selectedCountry}
+            onCountrySelected = {onCountrySelected}/>
+            {/* <CountriesList id = " countries" countries = {countries} onCountryClick = {onCountryClick} selectedCountry = {selectedCountry}/> */}
             <CountryInfo selectedCountry = {selectedCountry} onButtonClick = {onButtonClick}/>
             <FavouriteCountries favourites = {favourites} onButtonClick = {onButtonClick}/>
         </div>

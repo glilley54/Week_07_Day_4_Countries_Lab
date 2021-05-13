@@ -3,6 +3,7 @@ body {
     background-size: cover;
     max-width: 100%;
     max-height: auto;
+    opacity: 75%;
 }
 
 .main-container {
@@ -19,4 +20,10 @@ body {
 
 #countries {
    
+}
+
+#select-box {
+    background-color: transparent;
+    border-style: none;
+    
 }

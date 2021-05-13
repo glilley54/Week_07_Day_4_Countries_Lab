@@ -8,7 +8,7 @@ const CountryInfo = ({selectedCountry, onButtonClick}) => {
     
     return (
         <div >
-            <h1> Flag of {selectedCountry.name}</h1> 
+            <h1> Population of{selectedCountry.name}: {selectedCountry.population}</h1> 
             <img id = "flag" src={selectedCountry.flag}></img>
             <button onClick={handleClick}>Add to Favourites</button>
 
