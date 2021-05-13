@@ -3,12 +3,13 @@ body {
     background-size: cover;
     max-width: 100%;
     max-height: auto;
-    opacity: 75%;
+       
 }
 
 .main-container {
     display: flex;
     justify-content: space-evenly;
+    color: white;
   }
 
 #flag {
@@ -16,14 +17,29 @@ body {
     border-style: solid;
     border-width: 2px;
     border-color: black;
+    box-shadow: 10px 10px 5px grey;
 }
 
-#countries {
+.fav-countries {
+    font-size: x-large;
    
 }
 
 #select-box {
     background-color: transparent;
     border-style: none;
+    position: relative;
+    font-family: Arial;
+    font-size: x-large;
+    font-style: bold;
+    color: white
     
+}
+
+#select-container {
+    padding-top: 30px;
+    /* position: relative; */
+    font-family: Arial;
+    
+   
 }

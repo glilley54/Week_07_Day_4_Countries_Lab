@@ -5,7 +5,7 @@ const FavCountry = ({country, onButtonClick}) => {
   
     return (
         <li>
-            <p>{country.name}</p>
+            <p class = "fav-countries">{country.name}</p>
         </li>
     )
 }

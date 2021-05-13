@@ -12,10 +12,12 @@ const CountrySelector = ({countries, onCountrySelected}) => {
     })
 
     return (
-        <select id = "select-box" defaultValue="" onChange={handleChange}>
+        <div id = "select-container">
+            <select id = "select-box" defaultValue="" onChange={handleChange}>
             <option value="" selected>Choose a Country</option>
             {countryOptions}
-        </select>
+            </select>
+        </div>
     )
 }
 
