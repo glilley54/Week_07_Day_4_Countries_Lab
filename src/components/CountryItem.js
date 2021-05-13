@@ -3,9 +3,12 @@ import CountryInfo from './CountryInfo'
 
 const CountryItem = ({country}) => {
 
+
+
     return (
-        <li>
+        <li >
             <h1>{country.name}</h1>
+            <p>Total Population: {country.population}</p>
         </li>
 
     )

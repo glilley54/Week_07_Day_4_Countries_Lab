@@ -4,7 +4,9 @@ import CountryItem from './CountryItem';
 const CountriesList = ({countries}) => {
 
     const countryNodes = countries.map((country, index) => {
-        return<CountryItem country = {country} key = {index}>{country.name}</CountryItem>
+        console.log(country)
+        return<CountryItem country = {country} key = {index}/>
+       
     })
 
     return (
@@ -15,4 +17,4 @@ const CountriesList = ({countries}) => {
     )
 }
 
-export default CountryItem;
+export default CountriesList;
