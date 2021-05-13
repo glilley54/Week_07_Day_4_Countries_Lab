@@ -1,11 +1,17 @@
 import React from 'react'
 
-const CountryInfo = ({country, selectedCountry}) => {
+const CountryInfo = ({selectedCountry, onButtonClick}) => {
 
+    const handleClick = function() {
+        onButtonClick(selectedCountry)
+    }
+    
     return (
-        <div>
-            <h1> name: {selectedCountry.name}</h1> 
-            <img src={selectedCountry.flag}></img>
+        <div >
+            <h1> Flag of {selectedCountry.name}</h1> 
+            <img id = "flag" src={selectedCountry.flag}></img>
+            <button onClick={handleClick}>Add to Favourites</button>
+
         </div>
     );
 
