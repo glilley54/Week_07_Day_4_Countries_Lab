@@ -1,12 +1,18 @@
 import React from 'react';
 import CountryInfo from './CountryInfo'
 
-const CountryItem = ({country}) => {
+const CountryItem = ({country, onCountryClick}) => {
 
+    const handleClick = function() {
+        onCountryClick(country)
+    }
 
+    const setSelectedCountry = function() {
+
+    }
 
     return (
-        <li >
+        <li onClick={handleClick}>
             <h1>{country.name}</h1>
             <p>Total Population: {country.population}</p>
         </li>
