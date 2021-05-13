@@ -1,18 +1,15 @@
 import React from 'react'
-import CountriesContainer from './containers/CountriesContainer';
+import CountriesContainer from "./containers/CountriesContainer";
 
 
 import './App.css';
 
 function App() {
   return (
-   <>
-    <CountriesContainer>
-   </>
 
-
-
+    <CountriesContainer/>
+      
   );
-}
+};
 
 export default App;

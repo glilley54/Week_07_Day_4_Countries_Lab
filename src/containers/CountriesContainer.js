@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import CountriesList from './components/CountriesList';
+import CountriesList from "../components/CountriesList";
 
 const CountriesContainer = function () {
 
